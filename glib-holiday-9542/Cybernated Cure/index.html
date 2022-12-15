@@ -5,271 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cybernated Cure</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            padding: 0;
-            margin: 0;
-        }
-        .pre-navbar {
-            font-weight: bold;
-            background-color: #6B81FF;
-            text-align: center;
-            color: white;
-            padding: 15px 4px;
-        }
-        .pre-navbar .tp {
-            margin-right: 6px;
-            font-size: 12px;
-            padding: 3px 6px;
-            
-            background-color: #D5DBFF;
-            border-radius: 9px;
-            color: #0020D6;
-        }
-         .pre-navbar .bm {
-            color: white;
-         }
-         body {
-            font-family: sans-serif;
-            font-size: 16px;
-         }
-         nav{
-             background:white;
-             padding: 0 15px;
-             box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-         }
-         a {
-            /* font-size: 17px; */
-            color: black;
-            text-decoration: none;
-         }
-         .menu,
-         .submenu {
-            list-style-type: none;
-         }
-        
-         .logo a img {
-            width: 60px;
-         }
-         .item {
-            padding: 10px;
-         }
-         .item.button {
-            padding: 9px 5px;
-         }
-         /* .item:not(.button) a:hover,
-         .item a:hover::after {
-           color: #ccc;
-         } */
-         /* Mobile-menu */
-         .menu {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-         }
-         .menu li a {
-            display: block;
-            padding: 10px 5px;
-         }
-         .menu li.subitem a{
-            padding: 15px;
-         }
-         .toggle {
-            order:1;
-            font-size: 20px;
-         }
-         .item.button {
-            order:3;
-         }
-         .item {
-            order:2;
-            width: 100%;
-            text-align: center;
-            display: none;
-         }
-         .active .item {
-            display: block;
-         }
-         /* divider between uttons and menu links */
-         .button.secondary {
-            border-bottom: 1px #444 solid;
-         }
-         .submenu a p {
-            display: none;
-         }
-         /* Submenu up fom Mobile screens */
-         .submenu {
-            display: none;
-         }
-         .submenu-active .submenu {
-            display: block;
-         }
-         .has-submenu i {
-            font-size: 12px;
-         }
-         .has-submenu > a::after {
-            font-family: "Font Awesome 5 Free";
-            font-size: 12px;
-            line-height: 16px;
-            font-weight: 900;
-            content: "\f078";
-            color: black;
-            padding-left: 5px;
-         }
-         .subitem a {
-            padding: 10px 15px;
-         }
-         .submenu-active {
-            background-color: white;
-            border-radius:  3px;
-         }
-     
-         /* .item.secondary {
-                width: auto;
-                order: 1;
-                display: block;
-                 
-                background: #2C4BFF;
-                border: 0
-            } */
-
-         /* Tablet Menu  */
-         @media all and (min-width:700px) {
-            .menu {
-                justify-content: center;
-            }
-            .logo {
-                flex:1;
-            }
-            .item.button {
-                width: auto;
-                order: 1;
-                display: block;
-            }
-            .toggle {
-                flex: 1;
-                text-align: right;
-                order: 2;
-            }
-
-            /* Button up from tablet screen  */
-            .menu li.button a {
-                padding: 10px 15px;
-                margin: 5px 0;
-            }
-            .button a{
-                background: #2C4BFF;
-                border: 1px royalblue solid
-            }
-            .button.secondary {
-                border: 0;
-            }
-            .button:not(.secondary) a {
-                background: transparent;
-                border: 0;
-                color: #0020D6;
-                font-size: 18px;
-            }
-            
-           .button:not(.secondary) a:hover{
-            
-            border-bottom: 1px #0020D6 solid ;
-           }
-           .button:not(.secondary) {
-            margin-left: 250px;
-           }
-      
-         }
-
-         /* Desktop menu  */
-
-         @media all and (min-width:960px) {
-            .menu {
-                align-items: center;
-                flex-wrap: nowrap;
-                background: none;
-            }
-            .logo{
-                order: 0;
-            }
-            .adjust{
-            padding-left:40px ;
-         }
-            .item {
-                order:1;
-                position: relative;
-                display: block;
-                width: auto;
-            }
-            .button {
-                order:2;
-            }
-            .submenu-active .submenu {
-                display: block;
-                position: absolute;
-                
-                text-align: left;
-                left: 0;
-                top:68px;
-                
-            }
-            .toggle {
-                display: none;
-            }
-            .submenu-active {
-                
-                border-radius: 0;
-            }
-            .item:hover{
-                display: visible;
-            }
-            .submenu{
-                width: 350px;
-                padding: 15px;
-            }
-           
-            .submenu a p {
-                
-                font-size: 15px;
-              padding-top: 10px; 
-            display: contents;
-            color: grey;
-         }
-       
-         .item:hover .submenu{
-            display: block;
-            position: absolute;
-                text-align: left;
-                left: 0;
-                top:68px;
-                background:white;
-                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-         }
-         .subitem a:hover{
-          
-            background:#ddd;
-         }
-         .submenu a{
-            color: #111;
-         }
-         .subitem h4 i{
-            margin-right:20px ;
-            font-size: 18px;
-            color: grey;
-         }
-         .subitem h4 {
-            padding-bottom: 10px;
-         }
-         .subitem .ssi i{
-            /* margin-right:20px ; */
-            
-            font-size: 25px;
-            color: black;
-         }
-         }
-    </style>
+    <link rel="stylesheet" href="./index.css">
     <script src="https://kit.fontawesome.com/157bc20dd4.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -331,7 +67,7 @@
                 <li class="item"><a href="#">Blog</a></li>
                 
                 <li class="item button"><a href="#">Log In</a></li>
-                <li class="item button secondary"><a href="#">Get started now</a></li>
+                <li class="item button secondary"><a href="./signup.html">Get started now</a></li>
                 
                 <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
             </ul>
@@ -339,54 +75,54 @@
          
     </div>
 </body>
+<script src="./index.js"></script>
 </html>
-<script>
-    const toggle = document.querySelector(".toggle");
-    const menu=document.querySelector(".menu");
-    const items =document.querySelectorAll(".item");
 
-    // toggle mobile menu 
-    function toggleMenu(){
-        if(menu.classList.contains("active")){
-            menu.classList.remove("active");
-            toggle.querySelector("a").innerHTML = "<i class='fas fa-bars'></i>";
-        }else{
-            menu.classList.add("active");
-            toggle.querySelector("a").innerHTML = "<i class='fas fa-bars'></i>";
-        }
-    }
+    <!-- // const toggle = document.querySelector(".toggle");
+    // const menu=document.querySelector(".menu");
+    // const items =document.querySelectorAll(".item");
 
-    // Activate Submenu 
-    function toggleItem(){
-        if(this.classList.contains("submenu-active")){
-            this.classList.remove("submenu-active");
-        }
-        else if(menu.querySelector(".submenu-active")){
-            menu.querySelector(".submenu-active").classList.remove("submenu-active");
-            this.classList.add("submenu-active");
-        }
-        else{
-            this.classList.add("submenu-active")
-        }
-    }
+    // // toggle mobile menu 
+    // function toggleMenu(){
+    //     if(menu.classList.contains("active")){
+    //         menu.classList.remove("active");
+    //         toggle.querySelector("a").innerHTML = "<i class='fas fa-bars'></i>";
+    //     }else{
+    //         menu.classList.add("active");
+    //         toggle.querySelector("a").innerHTML = "<i class='fas fa-bars'></i>";
+    //     }
+    // }
 
-    // close Submenu from Anywhere 
+    // // Activate Submenu 
+    // function toggleItem(){
+    //     if(this.classList.contains("submenu-active")){
+    //         this.classList.remove("submenu-active");
+    //     }
+    //     else if(menu.querySelector(".submenu-active")){
+    //         menu.querySelector(".submenu-active").classList.remove("submenu-active");
+    //         this.classList.add("submenu-active");
+    //     }
+    //     else{
+    //         this.classList.add("submenu-active")
+    //     }
+    // }
 
-    function closeSubmenu(e){
-        if(menu.querySelector(".submenu-active")){
-            let isClickInside =menu.querySelector(".submenu-active").contains(e.target);
-            if(!isClickInside && menu.querySelector(".submenu-active")){
-                menu.querySelector(".submenu-active").classList.remove("submenu-active");
-            }
-        }
-    }
-    // Event Listner 
-    toggle.addEventListener("click", toggleMenu, false);
-    for( let item of items){
-        if(item.querySelector(".submenu")){
-            item.addEventListener("click", toggleItem, false );
-        }
-        item.addEventListener("keypress", toggleItem, false);
-    }
-    document.addEventListener("click" , closeSubmenu , false)
-</script>
+    // // close Submenu from Anywhere 
+
+    // function closeSubmenu(e){
+    //     if(menu.querySelector(".submenu-active")){
+    //         let isClickInside =menu.querySelector(".submenu-active").contains(e.target);
+    //         if(!isClickInside && menu.querySelector(".submenu-active")){
+    //             menu.querySelector(".submenu-active").classList.remove("submenu-active");
+    //         }
+    //     }
+    // }
+    // // Event Listner 
+    // toggle.addEventListener("click", toggleMenu, false);
+    // for( let item of items){
+    //     if(item.querySelector(".submenu")){
+    //         item.addEventListener("click", toggleItem, false );
+    //     }
+    //     item.addEventListener("keypress", toggleItem, false);
+    // }
+    // document.addEventListener("click" , closeSubmenu , false) -->
