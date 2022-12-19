@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.signup {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ 
+}
+.logo{
+    padding:30px;
+}
+
+.all{
+    margin: auto;
+    width: 60%;
+
+}
+.signup-form{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+.signup-form>h1{
+    text-align: center;
+}
+.main-content{
+    width: 100%;
+  
+ 
+}
+.main-data{
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+    gap:20px;
+    
+}
+a{
+    padding-top: 20px;
+    text-align: right;
+}
+
+@media all and (min-width:100px) and (max-width:1250px) {
+    .side-review{
+        display: none;
+    }
+  
+}
+
+@media all and (min-width:100px) and (max-width:650px) {
+    .signup-form{
+        
+        padding:5px;
+    }
+}
