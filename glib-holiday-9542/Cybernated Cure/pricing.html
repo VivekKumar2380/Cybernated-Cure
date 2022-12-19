@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CC-pricing pages</title>
+    <script src="https://kit.fontawesome.com/157bc20dd4.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <style>
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+
+.pre-navbar {
+   font-weight: bold;
+   background-color: #6B81FF;
+   text-align: center;
+   color: white;
+   padding: 15px 4px;
+}
+
+.pre-navbar .tp {
+   margin-right: 6px;
+   font-size: 12px;
+   padding: 3px 6px;
+
+   background-color: #D5DBFF;
+   border-radius: 9px;
+   color: #0020D6;
+}
+
+.pre-navbar .bm {
+   color: white;
+}
+
+body {
+   font-family: sans-serif;
+   font-size: 16px;
+}
+
+/* nav styling start  */
+nav {
+   background: white;
+   padding: 0 15px;
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+a {
+   /* font-size: 17px; */
+   color: black;
+   text-decoration: none;
+}
+
+.menu,
+.submenu {
+   list-style-type: none;
+}
+
+.logo a img {
+   width: 60px;
+}
+
+.item {
+   padding: 10px;
+}
+
+.item.button {
+   padding: 9px 5px;
+}
+
+/* .item:not(.button) a:hover,
+ .item a:hover::after {
+   color: #ccc;
+ } */
+/* Mobile-menu */
+.menu {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.menu li a {
+   display: block;
+   padding: 10px 5px;
+}
+
+.menu li.subitem a {
+   padding: 15px;
+}
+
+.toggle {
+   order: 1;
+   font-size: 20px;
+}
+
+.item.button {
+   order: 3;
+}
+
+.item {
+   order: 2;
+   width: 100%;
+   text-align: center;
+   display: none;
+}
+
+.active .item {
+   display: block;
+}
+
+/* divider between buttons and menu links */
+.button.secondary {
+   border-bottom: 1px #444 solid;
+}
+
+.submenu a p {
+   display: none;
+}
+
+/* Submenu up fom Mobile screens */
+.submenu {
+   display: none;
+}
+
+.submenu-active .submenu {
+   display: block;
+}
+
+.has-submenu i {
+   font-size: 12px;
+}
+
+.has-submenu>a::after {
+   font-family: "Font Awesome 5 Free";
+   font-size: 12px;
+   line-height: 16px;
+   font-weight: 900;
+   content: "\f078";
+   color: black;
+   padding-left: 5px;
+}
+
+.subitem a {
+   padding: 10px 15px;
+}
+
+.submenu-active {
+   background-color: white;
+   border-radius: 3px;
+}
+
+/* .item.secondary {
+        width: auto;
+        order: 1;
+        display: block;
+         
+        background: #2C4BFF;
+        border: 0
+    } */
+/* nav styling end /*/
+/* postr 1  */
+.first {
+   width: 90%;
+   margin: auto;
+   margin-top: 30px;
+   
+}
+
+.a {
+   width: 95%;
+   margin: auto;
+
+   display: flex;
+
+}
+
+
+
+
+.ash {
+   height: 450px;
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: center;
+   padding: 0 40px;
+
+
+}
+
+.ash>h1 {
+  
+   font-size: 45px;
+   margin: 5px 0;
+}
+
+.ash>p {
+   margin: 25px 0;
+  
+   align-content: center;
+   font-size: 14px;
+   font-weight:600;
+}
+
+.ash>.ss,
+.ash>.sw {
+   padding: 11px 8px;
+   margin: 5px;
+   border: 1px solid #0020D6;
+   font-weight: bolder;
+   border-radius: 5px;
+}
+
+.ash>.ss {
+   background-color: #2C4BFF;
+   color: white;
+}
+
+.ash>.sw {
+   color: #0020D6;
+   border: 2px solid #2C4BFF;
+}
+
+.b>img {
+   width: 100%;
+}
+.top-heading{
+    margin: 60px auto;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* pricing table strt  */
+
+.lower-cards {
+    width: 95%;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.free{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.free h1{
+    font-size: 2.2rem;
+}
+.btnsec{
+    width: 100%;
+    padding: 15px 10px;
+    background: #2C4BFF;
+    border-radius: 5px;
+    border: none;
+   
+}
+.btnsec>a{
+    color: white;
+    font-weight: bold;
+}
+
+/* pricing table end  */
+/* top gray strt  */
+
+.topgray{
+    color: grey;
+    text-align: center;
+    margin: 60px auto;
+}
+
+/* all greys  */
+.c {
+   width: 90%;
+   margin: auto;
+}
+
+.c>.cs {
+
+   margin-top: 70px;
+   margin-bottom: 70px;
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+   gap: 10px;
+   color: grey;
+}
+
+.cs>div>h1 {
+   font-size: 1.2rem;
+}
+
+/* all greys end  */
+
+.k{
+   width: 70%;
+   margin:auto;
+   margin-top: 150px;
+   text-align: center;
+   font-size: 27px;
+}
+
+/* k class end  */
+
+/* l sec strt  */
+
+.l {
+   width: 40%;
+   margin: auto;
+   margin-top: 30px;
+   margin-bottom: 100px;
+   
+}
+.l>div{
+   width: 90%;
+   margin: auto;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+  
+}
+.l>div>div{
+   margin: auto;
+}
+
+/* l sec end  */
+
+/* m sec strt  */
+.m{
+   background-color: #2C4BFF;
+   padding-top: 50px;
+   padding-bottom: 140px;
+   color: white;
+   margin-bottom: 30px;
+}
+.m>div{
+   width: 50%;
+   margin: auto;
+   text-align: center;
+   
+}
+.m>div>h1{
+   margin: 70px auto;
+   font-size: 1.6rem;
+}
+.m>div>a{
+   background-color: #E97284;
+   color: white;
+   font-size: 20px;
+   padding: 25px 31px;
+   border-radius: 5px;
+}
+/* m sec end  */
+
+/* n sec strt  */
+.n{
+   width: 90%;
+   margin: auto;
+   margin-top: 60px;
+   
+   margin-bottom: 60px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+.n>.n-a{
+   display: flex;
+   width: 30%;
+   /* margin: auto; */
+   flex-direction: column;
+   padding-left: 20px;
+ 
+   padding-right: 80px;
+   
+}
+.n-icon{
+   margin-top: 40px;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   gap: 20px;
+}
+.n-btn{
+   display: flex;
+   flex-direction: row;
+   margin: 10px 0;
+   gap: 30px;
+}
+.n-btn>.n-btn1,
+.n-btn>.n-btn2{
+     padding: 5px 15px;
+     font-size: 10px;
+     border:1px solid #0072bc;
+     border-radius: 20px;
+     color:#0072bc;
+}
+.dnd{
+   font-weight: bold;
+   margin-top: 20px;
+}
+.copyright{
+   /* text-align: center; */
+   font-size: 12px;
+}
+.n>.n-b{
+  
+  text-align: center;
+ 
+}
+.n-b>ul>li{
+   margin: 20px auto;
+   list-style: none;
+   font-size: 0.95rem;
+  }
+  .n-b>ul>li>span{
+      color:#0020D6;
+      font-size: 10px;
+      font-weight: bold;
+      background-color: #6B81FF;
+      padding: 3px 5px;
+      border-radius: 7px;
+  }
+
+/* nav bar responsiveness start  */
+/* Tablet Menu  */
+@media all and (min-width:700px) {
+   .menu {
+      justify-content: center;
+   }
+
+   .logo {
+      flex: 1;
+   }
+
+   .item.button {
+      width: auto;
+      order: 1;
+      display: block;
+   }
+
+   .toggle {
+      flex: 1;
+      text-align: right;
+      order: 2;
+   }
+
+   /* Button up from tablet screen  */
+   .menu li.button a {
+      padding: 10px 15px;
+      margin: 5px 0;
+   }
+
+   .button a {
+      background: #2C4BFF;
+      border: 1px royalblue solid
+   }
+
+   .button.secondary {
+      border: 0;
+   }
+
+   .button:not(.secondary) a {
+      background: transparent;
+      border: 0;
+      color: #0020D6;
+      font-size: 18px;
+   }
+
+   .button:not(.secondary) a:hover {
+
+      border-bottom: 1px #0020D6 solid;
+   }
+
+   .button:not(.secondary) {
+      margin-left: 250px;
+   }
+
+}
+
+/* Desktop menu  */
+
+@media all and (min-width:960px) {
+   .menu {
+      align-items: center;
+      flex-wrap: nowrap;
+      background: none;
+   }
+
+   .logo {
+      order: 0;
+   }
+
+   .adjust {
+      padding-left: 40px;
+   }
+
+   .item {
+      order: 1;
+      position: relative;
+      display: block;
+      width: auto;
+   }
+
+   .button {
+      order: 2;
+   }
+
+   .submenu-active .submenu {
+      display: block;
+      position: absolute;
+
+      text-align: left;
+      left: 0;
+      top: 68px;
+
+   }
+
+   .toggle {
+      display: none;
+   }
+
+   .submenu-active {
+
+      border-radius: 0;
+   }
+
+   .item:hover {
+      display: visible;
+   }
+
+   .submenu {
+      width: 350px;
+      padding: 15px;
+   }
+
+   .submenu a p {
+
+      font-size: 15px;
+      padding-top: 10px;
+      display: contents;
+      color: grey;
+   }
+
+   .item:hover .submenu {
+      display: block;
+      position: absolute;
+      text-align: left;
+      left: 0;
+      top: 68px;
+      background: white;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   }
+
+   .subitem a:hover {
+
+      background: #ddd;
+   }
+
+   .submenu a {
+      color: #111;
+   }
+
+   .subitem h4 i {
+      margin-right: 20px;
+      font-size: 18px;
+      color: grey;
+   }
+
+   .subitem h4 {
+      padding-bottom: 10px;
+   }
+
+   .subitem .ssi i {
+      /* margin-right:20px ; */
+
+      font-size: 25px;
+      color: black;
+   }
+
+   .secondary a {
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+
+   }
+
+   .secondary a:hover {
+      background: #0020D6;
+
+   }
+
+}
+
+/* nav bar reponsivness end  */
+@media all and (min-width:100px) and (max-width:699px) {
+   .a {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+
+   }
+   
+   .c>.cs {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+   }
+   .lower-cards {
+    width: 95%;
+margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+}
+   .l>div{
+display: flex;
+flex-direction: column;
+gap: 30px;
+   }
+   .n{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+   }
+   .n>.n-a{
+            
+      margin: auto;
+      padding: 30px;
+   }
+}
+
+
+@media all and (min-width:345px) and (max-width:699px) {
+   .c>.cs {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+   }
+}
+@media all and (min-width:100px) and (max-width:344px) {
+   .c>.cs {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 30px;
+   }
+}
+
+@media all and (min-width:700px) and (max-width:1050px) {
+   
+    .c>.cs {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+   }
+   .l>div{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      margin: auto;
+         }
+         .n{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+         }
+         .n>.n-a{
+            
+            margin: auto;
+            padding: 30px;
+         }
+         .lower-cards {
+    width: 95%;
+margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+}
+    </style>
+</head>
+<body>
+    <div class="index">
+        <!-- pre nav bar start -->
+        <div class="pre-navbar">
+            <p><span class="tp"> New </span> Create and schedule Twitter threads! <a class="bm" href="#">Find out more</a></p>
+        </div>
+         <!-- pre nav bar end -->
+         
+         <!-- nav-bar start -->
+
+         <nav>
+            <ul class="menu">
+                <li class="logo"><a href="./index.html"><img  src="./Imagess/Black And White Modern Vintage Retro Brand Logo (1).png " alt=""></a></li>
+                <li class="item has-submenu"> 
+                    <a tabindex="0">Tools</a>
+                  <ul class="submenu">
+                    <li class="subitem"><a href="#">
+                        <h4><i class="fa-regular fa-paper-plane"></i> Publishing</h4>
+                        <p class="adjust">Plan, collaborate, and publish thumb-stopping content</p></a>
+                    </li>
+                    <li class="subitem"><a href="#">
+                        <h4><i class="fa-solid fa-chart-line"></i> Analytics</h4>
+                        <p class="adjust">Analyze social media performance and create reports</p></a>
+                    </li>
+                    <li class="subitem"><a href="#">
+                        <h4><i class="fa-regular fa-message"></i> Engagement</h4>
+                        <p class="adjust">Quickly navigate your comments and engage with your audience</p></a>
+                    </li>
+                    <li class="subitem"><a href="#">
+                        <h4><i class="fa-solid fa-pen-nib"></i> Start Page</h4>
+                        <p class="adjust">Build a customized landing page in minutes</p></a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="item has-submenu">
+                    <a tabindex="0">Channels</i></a>
+                      <ul class="submenu">
+                        <li class="subitem"><a href="#"><h4 class="ssi"><i class="fa-brands fa-facebook-f"></i> Facebook</h4></a>
+                        </li>
+                        <li class="subitem"><a href="#"><h4 class="ssi"><i class="fa-brands fa-square-google-plus"></i>Google Business Profile</h4></a>
+                        </li>
+                        <li class="subitem"><a href="#"><h4 class="ssi"><i class="fa-brands fa-instagram"></i>Instagram</h4></a>
+                        </li>
+                        <li class="subitem"><a href="#"><h4 class="ssi"><i class="fa-brands fa-linkedin"></i>LinkedIn</h4></a>
+                        </li>
+                        <li class="subitem"><a href="#"><h4 class="ssi"><i class="fa-brands fa-pinterest"></i>Pinterest</h4></a>
+                        </li>
+                        <li class="subitem"><a href="#"> <h4 class="ssi"><i class="fa-brands fa-shopify"></i>Shopify</h4></a>
+                        </li>
+                        <li class="subitem"><a href="#"><h4 class="ssi"><i class="fa-brands fa-tiktok"></i>TikTok</h4></a>
+                        </li>
+                        <li class="subitem"><a href="#">  <h4 class="ssi"><i class="fa-brands fa-twitter"></i>Twitter</h4></a>
+                        </li>
+                      </ul>
+                </li>
+                <li class="item"><a href="#">Pricing</a></li>
+                <li class="item"><a href="#">Blog</a></li>
+                
+                <li class="item button"><a href="./login.html">Log In</a></li>
+                <li class="item button secondary"><a href="./signup.html">Get started now</a></li>
+                
+                <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+            </ul>
+         </nav>
+        
+       
+         <!-- pricing table end  -->
+         <div class="first">
+            <div class="top-heading">
+                <h1>More value. More flexibility.</h1>
+            </div>
+            <div class="lower-cards">
+                <div class="free">
+                <h1>Free</h1>
+                <p style="color: grey; font-size: 17px; font-weight: 600;">For individuals and businesses getting started with social media</p>
+                <h1>$0</h1>
+                <p style="line-height: 25px;">Manage up to three channels <br>
+
+                    Billed at <span style="font-weight: bold;"> $0/year</span></p>
+                <button  class="btnsec"><a href="./signup.html">Get started</a></button>
+                <ul style="line-height: 25px; font-size: 17px; padding-left: 15px;">
+                    <li>Basic publishing tools</li>
+                    <li>Landing page builder</li>
+                </ul>
+                </div>
+                <div class="free">
+                    <h1>Essentials</h1>
+                    <p style="color: grey; font-size: 17px; font-weight: 600;">For professionals who use publishing, analytics & engagement tools.</p>
+                    <h1>$
+                        60
+                        
+                        / yearly
+                        for 1 channel</h1>
+                    <p style="line-height: 25px;">Add additional channels for  <br>
+    
+                         <span style="font-weight: bold;"> $5/month</span></p>
+                    <button  class="btnsec"><a href="./signup.html">Try for 14 days</a></button>
+                    <ul style="line-height: 25px; font-size: 17px; padding-left: 15px;">
+                        <li>Planning & publishing tools</li>
+                        <li>Analytics tools</li>
+                        <li>Engagement tools</li>
+                        <li>Landing page builder</li>
+                        <li>Landing page builder</li>
+                    </ul>
+                    </div>
+                    <div class="free">
+                        <h1>Team</h1>
+                        <p style="color: grey; font-size: 17px; font-weight: 600;">For teams who want unlimited user seating, collaboration, and reporting.</p>
+                        <h1>$
+                            120
+                            
+                            / yearly
+                            for 1 channel</h1>
+                        <p style="line-height: 25px;">Add additional channels for <br>
+        
+                             <span style="font-weight: bold;"> $10/month</span></p>
+                        <button  class="btnsec"><a href="./signup.html">Try for 14 days</a></button>
+                        <ul style="line-height: 25px; font-size: 17px; padding-left: 15px;">
+                            <li>Essentials features, plus:</li>
+                            <li>Unlimited team members & clients</li>
+                            <li>Draft collaboration tools</li>
+                            
+                        </ul>
+                        </div>
+                        <div class="free">
+                            <h1>Agency</h1>
+                            <p style="color: grey; font-size: 17px; font-weight: 600;">For marketing agencies with 10 or more channels.</p>
+                            <h1>$
+                                1200
+                                
+                                / yearly
+                                for 10 channels</h1>
+                            <p style="line-height: 25px;">Add additional channels for  <br>
+            
+                               <span style="font-weight: bold;">$5/month</span></p>
+                            <button  class="btnsec"><a href="./signup.html">Try for 14 days</a></button>
+                            <ul style="line-height: 25px; font-size: 17px; padding-left: 15px;">
+                                <li>Team features, plus:</li>
+                                <li>Custom access & permissions</li>
+                                <li>Agency-friendly pricing</li>
+                            </ul>
+                            </div>
+            </div>
+            <div class="topgray">
+                <h2>Trusted by</h2>
+            </div>
+            <div class="c">
+                <div class="cs">
+                <div>
+                    <h1>Huckberry</h1>
+                </div>
+                <div>
+                    <h1>FOOD52</h1>
+                </div>
+                <div>
+                    <h1 style="text-decoration: underline;">THE SILL</h1>
+                </div>
+                <div>
+                    <h1>BURROW</h1>
+                </div>
+                <div>
+                    <h1>HappySocks</h1>
+                </div>
+                <div>
+                    <h1>DressUp</h1>
+                </div>
+                </div>
+            </div>
+           
+            
+         </div>
+       
+     
+       
+        <div class="k">
+            <h6>An official marketing partner of the industry leaders</h6>
+        </div>
+        <div class="l">
+            <div>
+                <div>
+                    <img src="./Imagess/meta-business-partner@2x-2.png" alt="" width="89"
+                    height="50">
+                </div>
+               <div>
+                <img src="./Imagess/pinterest-marketing-partner@2x-2.png" alt="" width="135"
+                height="50">
+               </div>
+               <div>
+                <img src="./Imagess/linkedin-marketing-partner@2x-2.png" alt="" width="148"
+                height="50">
+               </div>
+               
+            </div>
+                
+            
+        </div>
+        <div class="m">
+            <div>
+                <h1>140,000+ people like you use Buffer to build their brand on social media every month</h1>
+               <a href="./signup.html">Get started now</a>
+            </div>
+               
+        </div>
+
+        <!-- footer sec strt   -->
+            <div class="n">
+                <div class="n-a">
+                    <a href=""> <img src="./Imagess/Black And White Modern Vintage Retro Brand Logo (1).png" width="148"
+                        height="148"></a>
+                   
+                    <div class="n-icon">
+                        <a href="https://www.instagram.com/buffer"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                        <a href="https://www.facebook.com/bufferapp"><i class="fa-brands fa-facebook fa-xl"></i></a>
+                        <a href="https://twitter.com/buffer"><i class="fa-brands fa-twitter fa-xl"></i></a>
+                        <a href="https://tiktok.com/@bufferapp"><i class="fa-brands fa-tiktok fa-xl"></i></a>
+                        <a href="https://www.linkedin.com/company/bufferapp"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                        <a href="https://www.pinterest.com/bufferapp/"><i class="fa-brands fa-pinterest fa-xl"></i></a>
+                    </div>
+                     <p class="dnd">Download</p>
+                     <div class="n-btn">
+                     <a class="n-btn1" href="https://apps.apple.com/app/apple-store/id490474324?pt=936146&ct=SiteFooter&mt=8"><i class="fa-brands fa-apple"></i> App Store</a>
+                     <a class="n-btn2" href="https://play.google.com/store/apps/details?id=org.buffer.android&hl=en"><i class="fa-brands fa-google-play"></i> Google Play</a>
+                     </div>
+                     <p class="copyright">
+                        Copyright ©2022 Buffer
+                        <span>|</span>
+                        Privacy
+                        <span>|</span>
+                        Terms
+                        <span>|</span>
+                        Security
+                     </p>
+                </div>
+                <div class="n-b">
+                    <h3>Tools</h3>
+                    <ul>
+                      <li>Publishing</li>
+                      <li>Analytics</li>
+                      <li>Engagement</li>
+                      <li><span>New</span>Start Page</li>
+                      <li>Extras</li>
+                    </ul>
+                </div>
+                <div class="n-b">
+                    <h3>Resources</h3>
+                    <ul>
+                      <li>Blog</li>
+                      <li>Content Library</li>
+                      <li>Browser Extension</li>
+                      <li>Free Image Editor</li>
+                    </ul>
+                </div>
+                <div class="n-b">
+                    <h3>Support</h3>
+                    <ul>
+                      <li>Help Center</li>
+                      <li>Status</li>
+                      <li>What's New</li>
+                      <li>Product Roadmap</li>
+                    </ul>
+                </div>
+                <div class="n-b">
+                    <h3>Company</h3>
+                    <ul>
+                      <li>About</li>
+                      <li>Transparency</li>
+                      <li>Careers</li>
+                      <li>Accessibility</li>
+                      <li>Press</li>
+                      <li>Sitemap</li>
+                    </ul>
+                </div>
+            </div>
+        <!-- footer sec end  -->
+    </div>
+</body>
+</html>
+<script>
+    const toggle = document.querySelector(".toggle");
+    const menu=document.querySelector(".menu");
+    const items =document.querySelectorAll(".item");
+
+    // toggle mobile menu 
+    function toggleMenu(){
+        if(menu.classList.contains("active")){
+            menu.classList.remove("active");
+            toggle.querySelector("a").innerHTML = "<i class='fas fa-bars'></i>";
+        }else{
+            menu.classList.add("active");
+            toggle.querySelector("a").innerHTML = "<i class='fas fa-bars'></i>";
+        }
+    }
+
+    // Activate Submenu 
+    function toggleItem(){
+        if(this.classList.contains("submenu-active")){
+            this.classList.remove("submenu-active");
+        }
+        else if(menu.querySelector(".submenu-active")){
+            menu.querySelector(".submenu-active").classList.remove("submenu-active");
+            this.classList.add("submenu-active");
+        }
+        else{
+            this.classList.add("submenu-active")
+        }
+    }
+
+    // close Submenu from Anywhere 
+
+    function closeSubmenu(e){
+        if(menu.querySelector(".submenu-active")){
+            let isClickInside =menu.querySelector(".submenu-active").contains(e.target);
+            if(!isClickInside && menu.querySelector(".submenu-active")){
+                menu.querySelector(".submenu-active").classList.remove("submenu-active");
+            }
+        }
+    }
+    // Event Listner 
+    toggle.addEventListener("click", toggleMenu, false);
+    for( let item of items){
+        if(item.querySelector(".submenu")){
+            item.addEventListener("click", toggleItem, false );
+        }
+        item.addEventListener("keypress", toggleItem, false);
+    }
+    document.addEventListener("click" , closeSubmenu , false)
+
+
+</script>
